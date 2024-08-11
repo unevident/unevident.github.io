@@ -1,7 +1,7 @@
 // import '../brickbreaker/brickbreaker.css'
 import GameCanvas from '../brickbreaker/components/gamecanvas';
 // import '../brickbreaker/index';
-import { useRef, useEffect } from 'react';
+import { useRef, useEffect, useState } from 'react';
 import { CanvasView } from "../brickbreaker/view/CanvasView";
 import { Ball } from "../brickbreaker/components/ball"
 import { Brick } from "../brickbreaker/components/brick";
@@ -22,7 +22,7 @@ import { Collision } from '../brickbreaker/Collision';
 import { createBricks } from "../brickbreaker/helpers";
 
 export function Brickbreaker() {
-    
+    const [ballSpeed, setBallSpeed] = useState(BALL_SPEED)
     let gameOver = false;
     let score = 0;
     const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -98,7 +98,7 @@ export function Brickbreaker() {
                 x: BALL_STARTX,
                 y: BALL_STARTY
             },
-            BALL_SPEED
+            ballSpeed
         )
         //create paddle
         const paddle = new Paddle(
@@ -129,7 +129,7 @@ export function Brickbreaker() {
         const view = new CanvasView(canvas, ctx, scoreDisplay, start, info);
         view.initStartButton(startGame);
 
-    }, [canvasRef])
+    }, [canvasRef, ballSpeed])
 
 
 
@@ -145,6 +145,8 @@ export function Brickbreaker() {
             <div className="flex-col justify-center p-2">
                 
             <GameCanvas ref={canvasRef} />
+            <label htmlFor="ballSpeed">Ball speed: {ballSpeed}</label>
+            <input id="ballSpeed" type="range" min={1} max={5} step={1} value={ballSpeed} onChange={(e) => setBallSpeed(parseInt(e.target.value))}/>
             </div>
 
         </div>
