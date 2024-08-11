@@ -6,7 +6,6 @@ import {
     BRICK_WIDTH,
     BRICK_HEIGHT,
     BRICK_PADDING,
-    BRICK_ENERGY
 } from './setup'
 
 export function createBricks(): Brick[] {

@@ -1,7 +1,7 @@
 import { useState } from "react"
 import projectsjson from "../projects/projects.json"
-import { listPosts } from "../Components/list_posts"
-import { project } from "../Components/project"
+// import { listPosts } from "../Components/list_posts"
+// import { project } from "../Components/project"
 
 export function Home() {
     const [count, setCount] = useState(0)

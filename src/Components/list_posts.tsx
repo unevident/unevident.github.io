@@ -1,6 +1,7 @@
+import { Post } from "../brickbreaker/types.tsx";
 import { Card } from "./card.tsx";
 
-export function listPosts({ post }) {
+export function listPosts({ post }: { post: Post }) {
     return (
         <a>
             <Card>
