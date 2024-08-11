@@ -1,0 +1,14 @@
+{
+    "projects" : [
+        {
+            "name": "This site",
+            "tags":"React, Tailwind, Typescript",
+            "description": "This website was created by me."
+        },
+        {
+            "name":"Brick Breaker",
+            "tags":"Javascript",
+            "description":"A brick breaker game I followed a guide to create"
+        }
+    ]
+}
