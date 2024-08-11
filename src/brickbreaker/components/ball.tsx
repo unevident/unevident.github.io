@@ -42,5 +42,18 @@ export class Ball {
     moveBall(): void {
         this.pos.x += this.speed.x;
         this.pos.y += this.speed.y;
+        console.log(this.speed);
+        
+    }
+
+    setSpeed(speed: number) {
+        console.log(speed);
+        
+        this.speed = {
+            x: this.speed.x < 0 ? -speed : speed,
+            y: this.speed.y < 0 ? -speed : speed
+        }
+        console.log(this.speed);
+        
     }
 }
