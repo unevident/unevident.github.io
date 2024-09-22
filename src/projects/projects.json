@@ -7,8 +7,8 @@
         },
         {
             "name":"Brick Breaker",
-            "tags":"Javascript",
-            "description":"A brick breaker game I followed a guide to create"
+            "tags":"Typescript",
+            "description":"A brick breaker game I followed a guide to create."
         }
     ]
 }

@@ -37,20 +37,20 @@ export class Collision {
 
     checkBallCollision(ball: Ball, paddle: Paddle, view: CanvasView): void {
         //1. check ball collision with paddle
-        if (ball.pos.x + ball.width > paddle.pos.x &&
-            ball.pos.x < paddle.pos.x + paddle.width &&
+        if (ball.pos.x + ball.width >= paddle.pos.x &&
+            ball.pos.x <= paddle.pos.x + paddle.width &&
             ball.pos.y + ball.height === paddle.pos.y
         ) {
             ball.changeYDirection();
         }
         //2. check ball collision with walls
         //ball movement x constraints
-        if (ball.pos.x > view.canvas.getBoundingClientRect().width - ball.width || ball.pos.x < 0) {
+        if (ball.pos.x >= view.canvas.getBoundingClientRect().width - ball.width || ball.pos.x <= 0) {
             ball.changeXDirection();
         }
 
         //ball movement y constraints
-        if (ball.pos.y < 0) {
+        if (ball.pos.y <= 0) {
             ball.changeYDirection();
         }
 
