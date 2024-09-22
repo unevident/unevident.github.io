@@ -1,6 +1,5 @@
 import { useState } from "react"
 import projectsjson from "../projects/projects.json"
-import Favicon from "react-favicon"
 // import { listPosts } from "../Components/list_posts"
 // import { project } from "../Components/project"
 
