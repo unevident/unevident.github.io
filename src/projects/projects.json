@@ -3,12 +3,14 @@
         {
             "name": "This site",
             "tags":"React, Tailwind, Typescript",
-            "description": "This website was created by me."
+            "description": "This website was created by me.",
+            "link": "https://github.com/unevident/unevident.github.io"
         },
         {
             "name":"Brick Breaker",
             "tags":"Typescript",
-            "description":"A brick breaker game I followed a guide to create."
+            "description":"A brick breaker game I followed a guide to create.",
+            "link": "https://unevident.github.io/#/brickbreaker"
         }
     ]
 }

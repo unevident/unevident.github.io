@@ -17,7 +17,15 @@ export default {
       },
       scale: {
         '103': '1.03'
-      }
+      },
+      colors: {
+        'oxford-blue': '#161B33',
+        'rich-black': '#0D0C1D'
+      },
+      gradientColorStops: {
+        'oxford-blue': '#161B33',
+        'rich-black': '#0D0C1D'
+      },
     },
   },
   plugins: [],
