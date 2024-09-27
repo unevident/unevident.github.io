@@ -30,7 +30,7 @@ export function Home() {
             <section id='projects' className="text-xl flex-col mb-3 space-y-1 mr-60">
               <h2 className='text-3xl m-2'>Projects</h2>
                 {projectsjson.projects.map((project) => (
-                  <a href={project.link}>
+                  <a href={project.link} target="_blank" rel="noopener noreferrer">
                     <div key={project.name} className='grid grid-flow-row-dense gap-2 border-2 p-2 rounded transition hover:scale-103 hover:bg-slate-700'>
                     <h3 className='text-2xl' >{project.name}</h3>
                     <h4>{project.tags}</h4>
