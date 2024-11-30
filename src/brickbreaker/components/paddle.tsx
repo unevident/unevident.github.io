@@ -51,11 +51,9 @@ export class Paddle {
     handleKeyUp = (e: KeyboardEvent): void => {
         if (e.code === "ArrowLeft" || e.key === "ArrowLeft") {
             this.moveLeft = false;
-            console.log('left key lifted up');
         }
         if (e.code === "ArrowRight" || e.key === "ArrowRight") {
             this.moveRight = false;
-            console.log('right key lifted up');
         };
     }
 

@@ -1,5 +1,7 @@
 // import '../brickbreaker/brickbreaker.css'
 import GameCanvas from '../brickbreaker/components/gamecanvas';
+import ArrowButton from '../brickbreaker/components/arrowbutton';
+import Arrow from '../brickbreaker/components/arrow';
 // import '../brickbreaker/index';
 import { useRef, useEffect, useState } from 'react';
 import { CanvasView } from "../brickbreaker/view/CanvasView";
@@ -148,6 +150,9 @@ export function Brickbreaker() {
             <label htmlFor="ballSpeed">Ball speed: {ballSpeed}</label>
             <input id="ballSpeed" type="range" min={1} max={5} step={1} value={ballSpeed} onChange={(e) => setBallSpeed(parseInt(e.target.value))}/>
             </div>
+
+            <ArrowButton direction="ArrowLeft" children={Arrow("ArrowLeft")}/>
+            <ArrowButton direction="ArrowRight" children={Arrow("ArrowRight")} />
 
         </div>
     )

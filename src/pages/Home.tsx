@@ -55,6 +55,9 @@ export function Home() {
             <button className='bg-blue-400 hover:bg-blue-700 border-zinc-950 size-40 rounded-full' onClick={() => setCount(count+1)}>
               count {count}
             </button>
+            <div className='arrow'>
+              
+            </div>
           </section>
         </div>
       </div>

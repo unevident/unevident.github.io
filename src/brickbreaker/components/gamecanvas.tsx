@@ -8,7 +8,7 @@ const GameCanvas = forwardRef<HTMLCanvasElement>((props, ref) => {
                 <div id='score'></div>
                 <button id='start' className="border border-black">Start</button>
                 <br></br>
-                <div id='info'>Press play. Use the arrow keys to control the paddle.</div>
+                <div id='info'>Press play. Use the arrow keys(or buttons if on mobile) to control the paddle.</div>
             </div>
         </div>
     )
