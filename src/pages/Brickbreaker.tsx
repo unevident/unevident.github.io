@@ -157,7 +157,7 @@ export function Brickbreaker() {
             <label htmlFor="ballSpeed">Ball speed: {ballSpeed}</label>
             <input id="ballSpeed" type="range" min={1} max={5} step={1} value={ballSpeed} onChange={(e) => setBallSpeed(parseInt(e.target.value))}/>
             </div>
-            <div className="m-2">
+            <div className="flex mt-8 justify-center w-auto">
                 <ArrowButton direction="ArrowLeft" children={Arrow("ArrowLeft")}/>
                 <ArrowButton direction="ArrowRight" children={Arrow("ArrowRight")} />
             </div>

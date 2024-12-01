@@ -9,7 +9,7 @@ const ArrowButton: React.FC<Props> = ({
     children
 }) => {
     return(
-        <button onMouseDown={() => {
+        <button className="ml-20 mr-20" onMouseDown={() => {
             var event = new KeyboardEvent('keydown', {
                 key: direction
             });
