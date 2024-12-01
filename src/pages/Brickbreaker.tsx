@@ -151,13 +151,13 @@ export function Brickbreaker() {
                 <meta name="viewport" content="width-device-width, initial-scale-1.0" />
             </div>
 
-            <div className="flex-col justify-center p-2 min-h-screen md:flex md:items-start">
+            <div className="flex-col justify-center m-0 max-h-screen md:flex md:items-start ">
                 
             <GameCanvas ref={canvasRef} />
             <label htmlFor="ballSpeed">Ball speed: {ballSpeed}</label>
             <input id="ballSpeed" type="range" min={1} max={5} step={1} value={ballSpeed} onChange={(e) => setBallSpeed(parseInt(e.target.value))}/>
             </div>
-            <div>
+            <div className="m-2">
                 <ArrowButton direction="ArrowLeft" children={Arrow("ArrowLeft")}/>
                 <ArrowButton direction="ArrowRight" children={Arrow("ArrowRight")} />
             </div>
