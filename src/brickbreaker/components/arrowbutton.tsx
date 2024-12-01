@@ -21,7 +21,19 @@ const ArrowButton: React.FC<Props> = ({
             });
             document.dispatchEvent(event);
             }
-        }>
+        }
+        onTouchStart={() => {
+            var event = new KeyboardEvent('keydown', {
+                key: direction
+            });
+            document.dispatchEvent(event);
+        }}
+        onTouchEnd={() => {
+            var event = new KeyboardEvent('keyup', {
+                key: direction
+            });
+            document.dispatchEvent(event);
+        }}>
             {children}
         </button>
     );

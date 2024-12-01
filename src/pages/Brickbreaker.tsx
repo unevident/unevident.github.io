@@ -25,6 +25,7 @@ import { createBricks } from "../brickbreaker/helpers";
 
 export function Brickbreaker() {
     const [ballSpeed, setBallSpeed] = useState(BALL_SPEED)
+    let gameStart = false;
     let gameOver = false;
     let score = 0;
     const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -32,11 +33,13 @@ export function Brickbreaker() {
     function setGameOver(view: CanvasView) {
         view.drawInfo('Game Over!');
         gameOver = false;
+        gameStart = false;
     }
     
     function setGameWin(view: CanvasView) {
         view.drawInfo('You win!');
         gameOver = false;
+        gameStart = false;
     }
     
     function gameLoop(
@@ -50,6 +53,10 @@ export function Brickbreaker() {
         view.drawBricks(bricks);
         view.drawPaddle(paddle);
         view.drawBall(ball);
+
+        if (!gameStart) {
+
+        }
 
         //move ball
         ball.moveBall();
@@ -141,19 +148,19 @@ export function Brickbreaker() {
         <div>
             <div>
                 <title>Brick Breaker Page</title>
-
+                <meta name="viewport" content="width-device-width, initial-scale-1.0" />
             </div>
 
-            <div className="flex-col justify-center p-2">
+            <div className="flex-col justify-center p-2 min-h-screen md:flex md:items-start">
                 
             <GameCanvas ref={canvasRef} />
             <label htmlFor="ballSpeed">Ball speed: {ballSpeed}</label>
             <input id="ballSpeed" type="range" min={1} max={5} step={1} value={ballSpeed} onChange={(e) => setBallSpeed(parseInt(e.target.value))}/>
             </div>
-
-            <ArrowButton direction="ArrowLeft" children={Arrow("ArrowLeft")}/>
-            <ArrowButton direction="ArrowRight" children={Arrow("ArrowRight")} />
-
+            <div>
+                <ArrowButton direction="ArrowLeft" children={Arrow("ArrowLeft")}/>
+                <ArrowButton direction="ArrowRight" children={Arrow("ArrowRight")} />
+            </div>
         </div>
     )
 }
