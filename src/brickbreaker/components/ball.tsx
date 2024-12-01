@@ -1,7 +1,7 @@
 import { Vector } from "../types";
 
 export class Ball {
-    private speed: Vector;
+    public speed: Vector;
     
     constructor(
         private ballSize: number,
@@ -29,6 +29,10 @@ export class Ball {
         return this.position;
     }
 
+    get getSpeed(): Vector {
+        return this.speed;
+    }
+
     //methods
 
     changeYDirection(): void {
@@ -44,10 +48,10 @@ export class Ball {
         this.pos.y += this.speed.y;       
     }
 
-    setSpeed(speed: number) {
+    setSpeed(xSpeed: number, ySpeed:number) {
         this.speed = {
-            x: this.speed.x < 0 ? -speed : speed,
-            y: this.speed.y < 0 ? -speed : speed
+            x: this.speed.x < 0 ? -xSpeed : xSpeed,
+            y: this.speed.y < 0 ? -ySpeed : ySpeed
         }        
     }
 }

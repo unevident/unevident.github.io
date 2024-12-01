@@ -92,9 +92,8 @@ export class CanvasView {
         }
 
         this.context?.beginPath();
-        this.context?.arc(ball.pos.x, ball.pos.y, ball.width / 2, 0, 2 * Math.PI);
+        this.context?.arc(ball.pos.x, ball.pos.y, (ball.width + 10)/ 2, 0, 2 * Math.PI);
         this.context?.fill();
-        console.log('drew ball at x: ' + ball.pos.x + ' , y: ' + ball.pos.y);
 
     }
 

@@ -5,7 +5,7 @@ export class Paddle {
     private moveRight: boolean;
 
     constructor(
-        private speed: number,
+        public speed: number,
         private paddleWidth: number,
         private paddleHeight: number,
         private position: Vector,
@@ -41,6 +41,9 @@ export class Paddle {
 
     get isMovingRight(): boolean {
         return this.moveRight;
+    }
+    get getSpeed(): number {
+        return this.speed;
     }
 
     movePaddle(): void {
