@@ -9,8 +9,14 @@
         {
             "name":"Brick Breaker",
             "tags":"Typescript",
-            "description":"A brick breaker game I followed a guide to create.",
+            "description":"A brick breaker game I followed a guide to create. (The source code for this page is within the GitHub page of this site.)",
             "link": "https://unevident.github.io/#/brickbreaker"
+        },
+        {
+            "name":"Sorting Algorithm Visualizer",
+            "tags": "React, Tailwind, Typescript",
+            "description": "A site that allows for the visualization of sorting algorithms.",
+            "link":"https://github.com/unevident/vite-react"
         }
     ]
 }
