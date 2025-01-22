@@ -17,6 +17,11 @@
             "tags": "React, Tailwind, Typescript",
             "description": "A site that allows for the visualization of sorting algorithms.",
             "link":"https://github.com/unevident/vite-react"
+        },
+        {
+            "name": "EviBot Text-To-Speech Discord Bot",
+            "tags":"Discord.js, Python",
+            "description": "A discord bot that uses (relatively) lightweight eSpeak and MBROLA libraries to vocalise text messages in a voice channel."
         }
     ]
 }
