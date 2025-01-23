@@ -1,12 +1,3 @@
-import { PropsWithChildren, useEffect, useRef } from "react";
-
-const ButtonWrapper = () => {
-    return (
-        <div className="flex h-1/4 items-center justify-center bg-slate-800 w-4/5">
-            <SpecialButton />
-        </div>
-    )
-}
 
 const SpecialButton = () => {
     return (
