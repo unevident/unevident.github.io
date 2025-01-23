@@ -1,10 +1,10 @@
-import { useState } from "react"
+// import { useState } from "react"
 import projectsjson from "../projects/projects.json"
 // import { listPosts } from "../Components/list_posts"
 // import { project } from "../Components/project"
 
 export function Home() {
-    const [count, setCount] = useState(0)
+    // const [count, setCount] = useState(0)
   
     return (
       <div>
