@@ -21,7 +21,8 @@
         {
             "name": "EviBot Text-To-Speech Discord Bot",
             "tags":"Discord.js, Python",
-            "description": "A discord bot that uses (relatively) lightweight eSpeak and MBROLA libraries to vocalise text messages in a voice channel."
+            "description": "A discord bot that uses (relatively) lightweight eSpeak and MBROLA libraries to vocalise text messages in a voice channel.",
+            "link":"https://github.com/unevident/evibot"
         }
     ]
 }
