@@ -1,0 +1,29 @@
+{
+    "skills": [
+        {
+            "name": "Python",
+            "image":""
+        },
+        {
+            "name": "Java",
+            "image":""
+        },
+        {
+            "name": "Javascript",
+            "image":""
+        },
+        {
+            "name": "Typescript",
+            "image":""
+        },
+        {
+            "name":"HTML/CSS",
+            "image":""
+        },
+        {
+            "name":"TailwindCSS",
+            "image":""
+        }
+
+    ]
+}

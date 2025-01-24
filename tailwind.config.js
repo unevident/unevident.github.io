@@ -26,7 +26,19 @@ export default {
         'oxford-blue': '#161B33',
         'rich-black': '#0D0C1D'
       },
+      keyframes: {
+        jiggle: {
+          '0%': { transform: 'rotate(0.0deg)' },
+          '25%': { transform: 'rotate(6.0deg)' },
+          '50%': { transform: 'rotate(0.0deg)' },
+          '75%': { transform: 'rotate(-6.0deg)' },
+          '100%': { transform: 'rotate(0.0deg)' },
+        },
+      }
     },
+    animation: {
+      'jiggle-div': 'jiggle 0.15s linear',
+    }
   },
   plugins: [],
 }
