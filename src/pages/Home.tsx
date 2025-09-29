@@ -18,8 +18,8 @@ export function Home() {
         <div className='min-h-screen md:flex md:items-start font-sans text-gray-50 bg-gradient-to-br mx-auto p-10 from-oxford-blue to-rich-black'>
           <section id='information' className='lg:w-1/5 mr-10'>
             <h1 className='text-6xl text-orange-400'>Linus Lee</h1>
-            <h2 className='text-2xl text-gray-300'>Student at National University of Singapore</h2>
-            <p className='text-base'>I am currently studying a bachelor's in Psychology at the National University of Singapore, with a second major in Data Science.</p>
+            <h2 className='text-2xl text-gray-300'>Graduate of National University of Singapore</h2>
+            <p className='text-base'>I have obtained a Bachelor's in Psychology at the National University of Singapore, with a second major in Data Science.</p>
             <footer className="flex mt-5">
               <a title="github" className="mr-2 hover:scale-125 transform transition" href="https://github.com/unevident">
                 <img className="hover:scale-125 transform transition" src="/github-icon.png"></img>

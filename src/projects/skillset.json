@@ -23,6 +23,10 @@
         {
             "name":"TailwindCSS",
             "image":""
+        },
+        {
+            "name":"Kotlin",
+            "image":""
         }
 
     ]

@@ -23,6 +23,12 @@
             "tags":"Discord.js, Python",
             "description": "A discord bot that uses (relatively) lightweight eSpeak and MBROLA libraries to vocalise text messages in a voice channel.",
             "link":"https://github.com/unevident/evibot"
+        },
+        {
+            "name": "Bus Timing App",
+            "tags": "Kotlin, Android Studio",
+            "description": "A bus timing application that uses API calls to LTA Datamall to provide real-time bus timing updates",
+            "link": "https://github.com/unevident/SG-BusWhen"
         }
     ]
 }
